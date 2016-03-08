@@ -1,0 +1,23 @@
+Query: {{ name }}
+Length: {{seqLen}}
+Threshold: {{threshold}}
+
+TA protein: {{TAprotein}}
+1. Score
+isTA(Score-based): {{isTA}}
+score: {{"{:.5f}".format(score)}}
+likelihood from TA model: {{"{:.5f}".format(likelihood)}}
+likelihood from MP model: {{"{:.5f}".format(likelihood_mp)}}
+2. TMD segments
+The Number of TMD segments(>=15 a.a.): {{NumOfTMD}}
+Positions of TMD segments: {{tmd_POS}}
+Contain C-ter TMD segments(<=50 a.a.): {{CterTMDPos}}
+
+{% set start=1 %}
+{% for s, p in wrapCotent %}
+sequence: {{start}} {{s}} {{ s|length + start - 1}}
+path    : {{start}} {{p}} {{ p|length + start - 1}}
+{% set start = s|length + start %}
+{% endfor %}
+
+

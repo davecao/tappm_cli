@@ -1,0 +1,65 @@
+<?<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Academic License
+==========================================================================
+TAPPM package is free of charge for public academic uses. 
+
+---------------ACADEMIC SOFTWARE LICENSE AGREEMENT--------------------------
+Bioinformation Engineering Laboratory (BEL) has the right to license all
+copyrights and other property rights in the Licensed Software identified as
+TAPPM and developed by BEL, and BEL desires to license the Software so that
+it becomes available for public use and benefit. 
+
+LICENSEE is a public funded Academic and/or Education and/or
+Research Institution. 
+  
+LICENSEE must use the Software for internal research purposes only. 
+
+LICENSEE shall have the right to make copies of the Licensed Software
+  for internal use at the Site and for back-up purposes under this
+  Agreement, but agrees that all such copies shall contain the copyright
+  notices and all other reasonable and appropriate proprietary markings or
+  confidential legends that appear on the Licensed Software provided
+  hereunder. 
+
+BEL shall have no obligation to offer support services to LICENSEE, and
+  nothing contained herein shall be interpreted as to require BEL to
+  provide maintenance, installation services, version updates, debugging,
+  consultation or end-user support of any kind.
+
+------------------ End of ACADEMIC SOFTWARE LICENSE AGREEMENT----------------
+
+
+Commercial License
+===========================================================================
+This is the appropriate option if you are not a member of a publicly funded 
+Academic and/or Education and/or Research Institution you must obtain a
+commercial license. Please contact with BEL.
+ 
+Contact info
+---------------------
+By Post mail:
+
+Bioinformation Engineering Laboratory
+Graduate School of Agricultural and Life Science
+University of Tokyo.
+No.1-1-1 Yayoi Bukyo-ku, Tokyo, Japan. ZIP:113-8657
+
+
+By email:
+
+Mr. Shunsuke Shigemitsu
+choge@choge.net
+or
+Dr. Wei CAO
+davecao@bi.a.u-tokyo.ac.jp
+-->
+<tappm version={{version}} created="{{rptTime}}">
+  <parameters>
+    <ncpu>{{ncpu}} </ncpu>
+    <totalSeq>{{totalSeq}}</totalSeq>
+  </parameters>
+  <resultItemList>
+{{ body_content }}
+  </resultItemList>
+</tappm>

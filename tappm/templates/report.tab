@@ -1,0 +1,34 @@
+# ------------------------------------------------------------------------------
+# A HMM-based predictor for TA proteins, implemented in python.
+#
+# TAPPM predicts TA proteins solely from target amino acid sequences according to
+# the knowledge of the sequence features of TMDs and the peripheral regions of
+# TA proteins. The hidden markov models of TA proteins as well as three different
+# types of transmembrane proteins with similar structures and compared their
+# likelihoods as TA proteins. Using these models, TAPPM achieved high prediction
+# accuracy (area under the receiver operator curve values reaching 0.963).
+#
+# A web application of TAPPM is also available freely at
+#  http://tenuto.bi.a.u-tokyo.ac.jp/tapp/
+#
+# {{ package }}
+# ------------------------------------------------------------------------------
+# File generated: {{ rptTime }}
+# Field description: seperated by tab key
+# 1. name  : Query protein identifier.
+# 2. seqLen: Query sequence length.
+# 3. TA protein: Final decision is done by the three criterias:
+#      A. the score is larger than or equal to the threshold.
+#      B. The number of TMD segments is one.
+#      C. The above mentioned TMD segment is overlapped with the C-terminal 
+#         segment of 50 a.a.
+# 4. isTA  : True or False, whether the query is TA protein or not based on score.
+# 5. hasTMD: Whether the query protein contains TMD segment(s)
+# 6. # of TMD segments: The number of TMD segments(>=15 a.a.)
+# 7. score :  A decision value from TAPPM predictor used to compare with a threshold (see log)
+# 8. likelihood: A likelihood value given by TA model
+# 9. likelihood_mp: A likelihood value given by MP model
+# 10. Positions of TMD segments: [(s, e) ... (s, e)]
+# 11. The TMD segments (overlapped with Cter of 50 a.a.):
+#-------------------------------------------------------------------------------
+{{ body_content }}

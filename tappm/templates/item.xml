@@ -1,0 +1,23 @@
+    <resultItem id="{{name}}" isTA="{{isTA}}" hasTMD="{{hasTMD}}">
+      <identifier>{{name}}</identifier>
+      <description>{{description}}</description>
+      <seqLen>{{seqLen}}</seqLen>
+      <sequence>{{sequence}}</sequence>
+      <path>{{path}}</path>
+      <score>{{score}}</score>
+      <likelihood>{{likelihood}}</likelihood>
+      <likelihood_mp>{{likelihood_mp}}</likelihood_mp>
+      <NumOfTMD>{{NumOfTMD}}</NumOfTMD>
+      <TMD_POS>{{tmd_POS}}</TMD_POS>
+      <CterTMDPos>{{CterTMDPos}}</CterTMDPos>
+      <FinalResult>{{TAprotein}}</FinalResult>
+      <wrappedFormat>
+        {% set start=1 -%}
+        {% for s, p in wrapCotent -%}
+        <seq_frag from="{{start}}" to="{{ s|length + start - 1 }}">{{s}}</seq_frag>
+        <path_frag from="{{start}}" to="{{ s|length + start - 1 }}">{{p}}</seq_frag>
+        {% set start = s|length + start -%}
+        {% endfor -%}
+      </wrappedFormat>
+    </resultItem>
+
