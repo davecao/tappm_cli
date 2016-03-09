@@ -140,7 +140,7 @@ def parse_cmd(argv):
     # --- 2. Multithreads options ---
     multihtreads_opts = OptionGroup(
          parser,
-         "Multithreads options for loading data",
+         "Multithreads options",
          "Option arguments for multithreads."
     )
 

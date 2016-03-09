@@ -65,7 +65,7 @@ Options:
                         The threshold value used for final decision to predict
                         TA or not. default is -0.0167222981.
 
-  Multithreads options for loading data:
+  Multithreads options:
     Option arguments for multithreads.
 
     --mcpu=MCPU         The number of threads, default is the number of cores.
