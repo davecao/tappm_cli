@@ -28,8 +28,9 @@ Download and Installation
     python setup.py build install  
 
 2. tappm
-    cd tappm
-    python setup.py build install_dist
+
+    cd tappm  
+    python setup.py build install_dist  
 
 Options
 --------------
