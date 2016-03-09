@@ -62,7 +62,7 @@ Options:
     --out=OUTFILE       Specify the output file name, default is
                         'tappm_report.tabular'.
     -t THRESHOLD, --threshold=THRESHOLD
-                        The threshold value used forfinal decision to predict
+                        The threshold value used for final decision to predict
                         TA or not. default is -0.0167222981.
 
   Multithreads options for loading data:
