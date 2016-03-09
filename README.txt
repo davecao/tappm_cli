@@ -23,13 +23,16 @@ Download and Installation
 -------------------------
 1. Numpy
 
-    git clone git://github.com/numpy/numpy.git numpy  
+    git clone git://github.com/numpy/numpy.git numpy
+
     cd numpy  
+
     python setup.py build install  
 
 2. tappm
 
     cd tappm  
+
     python setup.py build install_dist  
 
 Options
