@@ -36,8 +36,11 @@ Download and Installation
     python setup.py build install_dist  
 
 Options
---------------
+-------
+
 Usage: tappm_cli.py [optioins] -i xx.fasta
+    or  
+    python -m "tappm.apps.tappm_cli" [options] -i xx.fasta
 
 Options:
     --version             show program's version number and exit
