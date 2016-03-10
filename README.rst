@@ -39,8 +39,9 @@ Options
 -------
 
 Usage:
+
     tappm_cli.py [optioins] -i xx.fasta  
-or  
+or
     python -m "tappm.apps.tappm_cli" [options] -i xx.fasta  
 
 Options:
