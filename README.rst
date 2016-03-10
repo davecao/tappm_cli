@@ -38,7 +38,7 @@ Download and Installation
 Options
 -------
 
-Usage:
+**Usage:**
 
     tappm_cli.py [optioins] -i xx.fasta  
 or
