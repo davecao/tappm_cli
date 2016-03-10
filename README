@@ -36,8 +36,12 @@ Download and Installation
     python setup.py build install_dist  
 
 Options
---------------
-Usage: tappm_cli.py [optioins] -i xx.fasta
+-------
+
+Usage:
+    tappm_cli.py [optioins] -i xx.fasta
+or  
+    python -m "tappm.apps.tappm_cli" [options] -i xx.fasta  
 
 Options:
     --version             show program's version number and exit
@@ -65,7 +69,7 @@ Options:
                         The threshold value used for final decision to predict
                         TA or not. default is -0.0167222981.
 
-  Multithreads options:
+  Multithreads options for loading data:
     Option arguments for multithreads.
 
     --mcpu=MCPU         The number of threads, default is the number of cores.
