@@ -10,8 +10,7 @@ A HMM-based predictor for TA proteins, implemented in python.
  likelihoods as TA proteins. Using these models, TAPPM achieved high prediction 
  accuracy (area under the receiver operator curve values reaching 0.963). 
 
-The web application of TAPPM is also available freely at 
-http://tenuto.bi.a.u-tokyo.ac.jp/tapp/
+.. The web application of TAPPM is also available freely at http://tenuto.bi.a.u-tokyo.ac.jp/tapp/
 
 Prerequisites
 -------------
